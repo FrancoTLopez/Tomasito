@@ -10,9 +10,6 @@ function redirection3(){
 function redirection4(){
     location.href="pag4.html"
 }
-function redirection5(){
-    location.href="pag5.html"
-}
 
 
 

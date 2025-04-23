@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #202620;
+  background-color: rgba(50, 62, 69);
 }
 
 h1 {
@@ -9,6 +9,46 @@ h1 {
   color: #b7b4b4
 }
 
+nav{
+  max-width: 900px;
+  margin: auto;
+  background-color: #333;
+  font-size: 20px;
+  margin-top: 50px;    
+}
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-horizontal > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu-horizontal > li:hover{
+  background-color: red;
+}
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 5);
+}
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+.menu-vertical li:hover{
+  background-color: rgb(29, 29, 31);
+}
+.menu-vertical li a {
+  display: block;
+  color:white;
+  padding: 15px 15px 20px;
+  text-decoration: none;
+}
 
 .calculadora {
   width: 314px;

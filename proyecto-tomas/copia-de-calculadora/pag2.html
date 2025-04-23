@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../calculadora/css/style.css"> 
+    <link rel="stylesheet" href="../copia-de-calculadora/css/style.css"> 
     <title>Calculadora</title>
 </head>
 <body>
+    <nav>
+        <ul class="menu-horizontal">
+        <li>
+            <a href="../index.html" onclick="redirection1()">Inicio</a>
+        </li>
+        <li>
+            <a href="#">Proyectos</a>
+            <ul class="menu-vertical">
+                <li><a href="../proyecto-tomas/copia-de-calculadora/pag2.html"onclick="redirection2()">Calculadora</a></li>
+                <li><a href="../pag3.html"onclick="redirection3()">Css</a></li>
+                <li><a href="../pag4.html"onclick="redirection4()">JavaScript</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Sobre Mi</a>
+            <ul class="menu-vertical">
+            <li><a href="#">Anual</a></li>
+            <li><a href="#">Mensual</a></li>º
+            </ul>
+        </li>
+        </ul>
+    </nav>
     
     <h1>Calculadora</h1>
- <div class="calculadora">
+    <div class="calculadora">
         <input type="text" id="pantalla" readonly>
         <br>
         <input type="button" value="1" onclick="agregar('1')">
@@ -33,11 +54,7 @@
         <input type="button" value="=" onclick="calcular()">
         <br>
         <input type="button" value="C" onclick="borrar()">
-        
-        </div>
-
-        <button class="but" type="button" onclick="redirection1()">1</button>
-        <button class="but" type="button" onclick="redirection2()">2</button>
-    <script src="../calculadora/js/index.js"></script>
+    </div>
+    <script src="../copia-de-calculadora/js/index.js"></script>
 </body>
 </html>
