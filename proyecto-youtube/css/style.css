@@ -71,4 +71,33 @@ header{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     margin-left: -1px; 
+    margin-right: 25px;
+    cursor: pointer;
+}
+.buscar-conteiner,
+.mic-conteiner,
+.subir-conteiner,
+.notificacion-conteiner{
+    position: relative;
+    display: flex;
+}
+.tooltip{
+    position: absolute;
+    bottom: -40px;
+    background-color: #ed5358;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 9px;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.buscar-conteiner:hover .tooltip,
+.mic-conteiner:hover .tooltip,
+.subir-conteiner:hover .tooltip,
+.notificacion-conteiner:hover .tooltip{
+    opacity: 1;
 }
